@@ -1,208 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/output.css">
     <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;500;700&family=Roboto&display=swap"
+        rel="stylesheet" />
     <title>Cardápio</title>
 </head>
+
 <body>
-    
+
     <header class="w-full h-[420px] bg-zinc-900 bg-home">
         <div class="w-full h-full flex flex-col justify-center items-center">
-            <img 
-            src="./assets/hamb-1.png" 
-            alt="logo devburgue "
-            class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
-             />
+            <img src="./assets/hamb-1.png" alt="logo devburgue "
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
 
-             <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Gonçalves Classic Burgers</h1>
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Gonçalves Classic Burgers</h1>
             <span class="text-white font medium ">São Paulo - SP, Rua vendeta da Praia, Jardim Guanhembu, 11 </span>
-            
+
             <div class=" bg-green-600 px-4 py-1 rounded-lg mt-4" id="date-burgue">
                 <span class="text-white font-medium">Seg á Dom - 18:00 as 23:00</span>
             </div>
         </div>
     </header>
-    
+
     <h2 class="text-2xl md:text-5x1 font-bold text-center mt-9 mb-6">
         Conheça nosso menu
     </h2>
 
- 
+
     <div id="menu">
-    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
-        <!--ó a div produto-->
-        <div class="flex gap-2">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <!--ó a div produto-->
+            <div class="flex gap-2">
 
-        <img src="./assets/hamb-1.png" alt="hamburgue smash " class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        
-        <div>
-            <p class="font-bold">hamburgue Smash </p>
-            <p class="text-base">Pão levinho de fermentação natural da trigou, burguer 160kg, queijo, prato e maionese da casa.</p>
+                <img src="./assets/hamb-1.png" alt="hamburgue smash "
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
 
-        <div class="produto">
-            <p class="font-bold text-lg">R$ 18.90</p>
-            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-            data-nome="hamburgue smash" 
-            data-preco="18.90">
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-        </div>
-        </div>
-    </div>
-    <!--fimmm-->
-    <!--ó a div produto-->
-    <div class="flex gap-2">
+                <div>
+                    <p class="font-bold">Hambúrguer Smash</p>
+                    <p class="text-base">Pão de fermentação natural, hambúrguer de 160g, queijo prato derretido e maionese especial da casa.</p>
 
-        <img src="./assets/hamb-2.png" alt="hamburgue Duplo " class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        
-        <div>
-            <p class="font-bold">hamburgue Duplo </p>
-            <p class="text-base">Pão levinho de fermentação natural da trigou, burguer 160kg, queijo, prato e maionese da casa.</p>
-
-        <div class="produto">
-            <p class="font-bold text-lg">R$ 32.90</p>
-            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-            data-nome="hamburgue Duplo" 
-            data-preco="32.90">
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-        </div>
-        </div>
-    </div>
-    <!-- fimm-->
-
-    <!--ó a div produto-->
-    <div class="flex gap-2">
-
-        <img src="./assets/hamb-3.png" alt="hamburgue kid " class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        
-        <div>
-            <p class="font-bold">hamburgue kid </p>
-            <p class="text-base">Pão levinho de fermentação natural da trigou, burguer 160kg, queijo, prato e maionese da casa.</p>
-
-        <div class="produto">
-            <p class="font-bold text-lg">R$ 15.90</p>
-            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-            data-nome="hamburgue kid" 
-            data-preco="15.90">
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-        </div>
-        </div>
-    </div>
-    <!-- fimm-->
-
-    <!--ó a div produto-->
-    <div class="flex gap-2">
-
-        <img src="./assets/hamb-4.png" alt="hamburgue da Casa " class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        
-        <div>
-            <p class="font-bold">hamburgue da Casa </p>
-            <p class="text-base">Pão levinho de fermentação natural da trigou, burguer 160kg, queijo, prato e maionese da casa.</p>
-
-        <div class="produto">
-            <p class="font-bold text-lg">R$ 29.99</p>
-            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-            data-nome="hamburgue da Casa" 
-            data-preco="29.99">
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-        </div>
-        </div>
-    </div>
-    <!-- fimm-->
-
-    </main>
-
-    <div class="mx-auto max-w-7xl px-2 my-2">
-        <h2 class="font-bold text-3x1">Bebidas
-
-        </h2>
-    </div>
-    
-    <!--grid bebidas-->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" >
-        <div class="flex gap-2">
-
-            <img src="./assets/refri-1.png" alt="Latinha de coca cola " class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-            
-            <div class="w-full">
-                <p class="font-bold">Latinha de coca cola  </p>
-    
-            <div class="produto">
-                <p class="font-bold text-lg">R$ 5</p>
-                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-nome="Latinha de coca cola" 
-                data-preco="5">
-                    <i class="fa fa-cart-plus text-lg text-white"></i>
-                </button>
+                    <div class="produto">
+                        <p class="font-bold text-lg">R$ 18.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-nome="Hambúrguer Smash"
+                            data-preco="18.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
+            <!--fimmm-->
+            <!--ó a div produto-->
+            <div class="flex gap-2">
+
+                <img src="./assets/hamb-2.png" alt="hamburgue Duplo "
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Hambúrguer Duplo </p>
+                    <p class="text-base">Pão de fermentação natural, hambúrguer de 160g, queijo prato derretido e maionese especial da casa.</p>
+
+                    <div class="produto">
+                        <p class="font-bold text-lg">R$ 32.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-nome="Hambúrguer Duplo"
+                            data-preco="32.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
+            <!-- fimm-->
+
+            <!--ó a div produto-->
+            <div class="flex gap-2">
+
+                <img src="./assets/hamb-3.png" alt="hamburgue kid "
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Hambúrguer kid</p>
+                    <p class="text-base">Pão de fermentação natural, hambúrguer de 160g, queijo prato derretido e maionese especial da casa..</p>
+
+                    <div class="produto">
+                        <p class="font-bold text-lg">R$ 15.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-nome="Hambúrguer kid"
+                            data-preco="15.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- fimm-->
+
+            <!--ó a div produto-->
+            <div class="flex gap-2">
+
+                <img src="./assets/hamb-4.png" alt="hamburgue da Casa "
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Hambúrguer da Casa</p>
+                    <p class="text-base">Pão de fermentação natural, hambúrguer de 160g, queijo prato derretido e maionese especial da casa.</p>
+
+                    <div class="produto">
+                        <p class="font-bold text-lg">R$ 29.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-nome="Hambúrguer da Casa"
+                            data-preco="29.99">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- fimm-->
+
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3x1">Bebidas
+
+            </h2>
         </div>
 
-        <div class="flex gap-2">
+        <!--grid bebidas-->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <div class="flex gap-2">
 
-            <img src="./assets/refri-2.png" alt="Latinha de refri " class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-            
-            <div class="w-full">
-                <p class="font-bold">Latinha de guarana </p>
-    
-            <div class="produto">
-                <p class="font-bold text-lg">R$ 5</p>
-                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-nome="Latinha de guarana" 
-                data-preco="5">
-                    <i class="fa fa-cart-plus text-lg text-white"></i>
-                </button>
+                <img src="./assets/refri-1.png" alt="Latinha de coca cola "
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Coca-Cola Original 220ml Lata</p>
+
+                    <div class="produto">
+                        <p class="font-bold text-lg">R$ 5</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-nome="Coca-Cola Original 220ml Lata"
+                            data-preco="5">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
+
+            <div class="flex gap-2">
+
+                <img src="./assets/refri-2.png" alt="Latinha de refri "
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Refrigerante Guaraná Antarctica Lata 350ml </p>
+
+                    <div class="produto">
+                        <p class="font-bold text-lg">R$ 5</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-nome="Refrigerante Guaraná Antarctica Lata 350ml"
+                            data-preco="5">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fim grid bebidas-->
+    </div>
+
+
+    <!--modal cart-->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden"
+        id="modal-cart">
+
+        <div id="modall" class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+            <div id="modal-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold text-lg ">Total: <span id="cart-total">0.00</span></p>
+            <p class="font-bold mt-4">Endereço de entrega :</p>
+            <input type="text" placeholder="Digite seu Endereço Completo" id="address"
+                class="w-full border-2 p-1 rounded my-1" />
+            <p class="text-red-500 hidden" id="address-warn">Digite seu Endereço Completo!!</p>
+
+            <div class="flex gap-1 items-center justify-between mt-4 w-full">
+                <button id="close-modal-btn" class="">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
             </div>
         </div>
     </div>
-    <!--fim grid bebidas-->
-</div>
+    <!--footer-->
 
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center ">
+        <button class="flex items-center gap-2 text-white  font-bold text-1xl" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
 
-<!--modal cart-->
-<div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden" 
-id="modal-cart">
-
-<div id="modall" class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
-    <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
-    <div id="modal-items" class="flex justify-between mb-2 flex-col"></div>
-
-    <p class="font-bold text-lg ">Total: <span id="cart-total">0.00</span></p>
-    <p class="font-bold mt-4">Endereço de entrega :</p>
-    <input type="text"
-    placeholder="Digite seu Endereço Completo"
-    id="address"
-    class="w-full border-2 p-1 rounded my-1"  />
-    <p class="text-red-500 hidden" id="address-warn">Digite seu Endereço Completo!!</p> 
-
-    <div class="flex gap-1 items-center justify-between mt-4 w-full">
-        <button id="close-modal-btn" class="">Fechar</button>
-        <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
-    </div>
-</div>
-</div>
-<!--footer-->
-
-<footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center ">
-    <button class="flex items-center gap-2 text-white  font-bold text-1xl" id="cart-btn">
-        (<span id="cart-count">0</span>)
-        veja meu carrinho
-        <i class="fa fa-cart-plus text-lg text-white"></i>
-    </button>
-</footer>
-     
     <script src="./script.js"></script>
 
 </body>
+
 </html>
