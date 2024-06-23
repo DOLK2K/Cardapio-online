@@ -45,7 +45,7 @@ function addToCart(name, price) {
         cart.push ({
             name,
             price,
-            quantity:1, 
+            quantity:1,
         }) 
     }
 
@@ -63,8 +63,8 @@ function updateCartModal() {
         cartItemElement.innerHTML = `
         <div class="flex items-center justify-between">
         <div> 
-        <p class="font-medium"> ${item.name} </p>
-        <p> Quantidade: ${item.quantity} </p>
+        <p class="font-medium text-lg"> ${item.name} </p>
+        <p class="text-lg"> Quantidade: ${item.quantity} </p>
         <p class="font-medium mt-2"> R$ ${item.price.toFixed(2)} </p> 
         </div>
         
@@ -136,15 +136,22 @@ checkoutBtn.addEventListener("click", function() {
         return;
     }
 
+    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const totalFormatted = total.toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    });
+
+
     const cartItems = cart.map((item) => {
         return (
-            ` ${item.name}, Quantidade: (${item.quantity}), Preço: R$ ${item.price}        `
+            ` ${item.name}, Quantidade: (${item.quantity}), Preço: R$ ${item.price},   `
         )
     }).join("")
-    const message = encodeURIComponent(cartItems)
+    const message = encodeURIComponent(`${cartItems}\nTotal: ${totalFormatted}\nEndereço: ${address.value}`)
     const phone = "5511945709088"
 
-    window.open(`https://wa.me/${phone}?text=${message} Endereço: ${address.value}`,"_blank") 
+    window.open(`https://wa.me/${phone}?text=${message}`,"_blank") 
 })
 
 
